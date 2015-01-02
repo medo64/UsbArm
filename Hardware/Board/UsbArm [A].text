@@ -1,0 +1,26 @@
+UsbArm
+======
+
+52 x 21 mm ~ 1.7 sqin
+
+
+Parts
+-----
+
+|  # | Part name                        | RefDes  | DigiKey                    |
+|---:|----------------------------------|---------|----------------------------|
+|  3 | C 100nF, X7R (0805)              | C1-C3   | 399-1170-1-ND              |
+|  2 | C 1uF /16V, X7R (0805)           | C4-C6   | 1276-1026-1-ND             |
+|  1 | D BAT54S (SOT23)                 | D1      | BAT54S-FDICT-ND            |
+|  2 | DS LED (0805)                    | DS1 DS2 | 475-1415-1-ND              |
+|  1 | J Header 6w                      | J1      | 952-2247-ND                |
+|  1 | J Socket 8w                      | J2      | S5483-ND                   |
+|  1 | Q MOSFET, P-channel (SOT23-3)    | Q1      | IRLML2246TRPBFCT-ND        |
+|  4 | R 100, 0.125W (0805)             | R1-R4   | RMCF0805FT100RCT-ND        |
+|  2 | R 470, 0.125W (0805)             | R5 R6   | RMCF0805FT470RCT-ND        |
+|  5 | U TA7291SG H-bridge (SIP9)       | U1-U5   | TA7291SGOJ-ND              |
+|  1 | U Si8421 (SOIC-8)                | U6      | 336-1755-5-ND              |
+|  1 | PIC16F1826 (SSOP-20)             | U7      | PIC16F1826-I/SS-ND         |
+
+
+To connect controller to USB, FTDI serial cable is needed.
