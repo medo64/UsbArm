@@ -24,4 +24,21 @@ Parts
 |  1 | PIC16F1826 (SSOP-20)             | U7      | PIC16F1826-I/SS-ND         |
 
 
+### Additional equipment ###
+
 To connect controller to USB, FTDI serial cable is needed.
+
+
+### Connector mounting ###
+
+Do notice that two connectors are mounted at two different sides. UART
+connector toward FTDI cable is mounted on top while connector toward the Arm
+must be mounted on the bottom. This is done in order to ensure better fit on
+in the arm cavity.
+
+
+### LEDs ###
+
+LED on Arm side provides constant current load so that two diodes drop voltage
+appropriately. It can be omitted with NiMH cells but it should be left on with
+non-chargeable alkaline batteries.
