@@ -24,12 +24,19 @@ Parts
 |  1 | PIC16F1826 (SSOP-20)             | U7      | PIC16F1826-I/SS-ND         |
 
 
-### Additional equipment ###
+### Alternative Parts ###
+
+| Part name                        | RefDes  | DigiKey                    |
+|----------------------------------|---------|----------------------------|
+| J Header 6w                      | J1      | 952-2372-ND                |
+
+
+### Additional Equipment ###
 
 To connect controller to USB, FTDI serial cable is needed.
 
 
-### Connector mounting ###
+### Connector Mounting ###
 
 Do notice that two connectors are mounted at two different sides. UART
 connector toward FTDI cable is mounted on top while connector toward the Arm
