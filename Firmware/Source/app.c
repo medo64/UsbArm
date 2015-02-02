@@ -40,10 +40,10 @@ void main() {
         }
 
         if (stateLed) { io_led_on(); } else { io_led_off(); }
-        if (stateM1 < 0) { io_gripper_close();    } else if (stateM1 > 0) { io_gripper_open();      } else { io_gripper_toggle();     }
-        if (stateM2 < 0) { io_wrist_down();       } else if (stateM2 > 0) { io_wrist_up();          } else { io_wrist_toggle();       }
-        if (stateM3 < 0) { io_elbow_down();       } else if (stateM3 > 0) { io_elbow_up();          } else { io_elbow_toggle();       }
-        if (stateM4 < 0) { io_base_move_down();   } else if (stateM4 > 0) { io_base_move_up();      } else { io_base_move_toggle();   }
-        if (stateM5 < 0) { io_base_rotate_left(); } else if (stateM5 > 0) { io_base_rotate_right(); } else { io_base_rotate_toggle(); }
+        if (stateM1 < 0) { io_gripper_close();    } else if (stateM1 > 0) { io_gripper_open();      } else { io_gripper_off();     }
+        if (stateM2 < 0) { io_wrist_down();       } else if (stateM2 > 0) { io_wrist_up();          } else { io_wrist_off();       }
+        if (stateM3 < 0) { io_elbow_down();       } else if (stateM3 > 0) { io_elbow_up();          } else { io_elbow_off();       }
+        if (stateM4 < 0) { io_base_move_down();   } else if (stateM4 > 0) { io_base_move_up();      } else { io_base_move_off();   }
+        if (stateM5 < 0) { io_base_rotate_left(); } else if (stateM5 > 0) { io_base_rotate_right(); } else { io_base_rotate_off(); }
     }
 }

@@ -1,7 +1,7 @@
 UsbArm
 ======
 
-52 x 21 mm ~ 1.7 sqin
+48 x 21 mm ~ 1.6 sqin
 
 
 Parts
@@ -9,34 +9,21 @@ Parts
 
 |  # | Part name                        | RefDes  | DigiKey                    | DigiKey (alternative)      |
 |---:|----------------------------------|---------|----------------------------|----------------------------|
-|  3 | C 100nF, X7R (0805)              | C1-C3   | 399-1170-1-ND              |                            |
-|  3 | C 1uF /16V, X7R (0805)           | C4-C6   | 1276-1026-1-ND             |                            |
-|  1 | C 10uF /16V, X7R (0805)          | C7      | 399-8013-1-ND              |                            |
+|  1 | C 100nF, X7R (0805)              | C1      | 399-1170-1-ND              |                            |
+|  1 | C 10uF /16V, X7R (0805)          | C2      | 399-8013-1-ND              |                            |
 |  1 | D BAT54S (SOT23)                 | D1      | BAT54S-FDICT-ND            |                            |
 |  2 | DS LED (0805)                    | DS1 DS2 | 475-1415-1-ND              |                            |
 |  1 | J Header 6w                      | J1      | 952-2247-ND                | 952-2372-ND                |
 |  1 | J Socket 8w                      | J2      | S5483-ND                   |                            |
 |  2 | Q MOSFET, P-channel (SOT23-3)    | Q1 Q2   | IRLML2246TRPBFCT-ND        |                            |
-|  4 | R 100, 0.125W (0805)             | R1-R4   | RMCF0805FT100RCT-ND        |                            |
 |  2 | R 470, 0.125W (0805)             | R5 R6   | RMCF0805FT470RCT-ND        |                            |
 |  5 | U TA7291SG H-bridge (SIP9)       | U1-U5   | TA7291SGOJ-ND              |                            |
-|  1 | U Si8421 (SOIC-8)                | U6      | 336-1755-5-ND              |                            |
-|  1 | PIC16F1826 (SSOP-20)             | U7      | PIC16F1826-I/SS-ND         |                            |
+|  1 | PIC16F1826 (SSOP-20)             | U6      | PIC16F1826-I/SS-ND         |                            |
 
 
 ### Additional Equipment ###
 
-To connect controller to USB, FTDI serial cable is needed. Both 5 V and 3.3 V
-variants are supported but charging is possible only if 5 V VCC output is
-provided.
-
-
-### Connector Mounting ###
-
-Do notice that two connectors are mounted at two different sides. UART
-connector toward FTDI cable is mounted on top while connector toward the Arm
-must be mounted on the bottom. This is done in order to ensure better fit on
-in the arm cavity.
+To connect controller to USB, FTDI serial cable is needed. Only 5 V will do.
 
 
 ### LEDs ###

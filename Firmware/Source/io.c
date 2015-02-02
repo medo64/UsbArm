@@ -26,105 +26,80 @@ void io_init() {
 
 
 void io_gripper_off() {
-    LATA0 = 0; //IN1
-    LATA1 = 0; //IN2
+    LATB3 = 0; //IN1
+    LATA4 = 0; //IN2
 }
 
 void io_gripper_close() {
-    LATA0 = 1; //IN1
-    LATA1 = 0; //IN2
+    LATB3 = 1; //IN1
+    LATA4 = 0; //IN2
 }
 
 void io_gripper_open() {
-    LATA0 = 0; //IN1
-    LATA1 = 1; //IN2
-}
-
-void io_gripper_toggle() {
-    LATA0 = !LATA0; //IN1
-    LATA1 = !LATA1; //IN2
+    LATB3 = 0; //IN1
+    LATA4 = 1; //IN2
 }
 
 
 void io_wrist_off() {
-    LATA6 = 0; //IN1
-    LATA7 = 0; //IN2
+    LATA2 = 0; //IN1
+    LATA3 = 0; //IN2
 }
 
 void io_wrist_down() {
-    LATA6 = 0; //IN1
-    LATA7 = 1; //IN2
+    LATA2 = 0; //IN1
+    LATA3 = 1; //IN2
 }
 
 void io_wrist_up() {
-    LATA6 = 1; //IN1
-    LATA7 = 0; //IN2
-}
-
-void io_wrist_toggle() {
-    LATA6 = !LATA6; //IN1
-    LATA7 = !LATA7; //IN2
+    LATA2 = 1; //IN1
+    LATA3 = 0; //IN2
 }
 
 
 void io_elbow_off() {
-    LATA2 = 0; //IN1
+    LATB5 = 0; //IN1
     LATB4 = 0; //IN2
 }
 
 void io_elbow_down() {
-    LATA2 = 0; //IN1
+    LATB5 = 0; //IN1
     LATB4 = 1; //IN2
 }
 
 void io_elbow_up() {
-    LATA2 = 1; //IN1
+    LATB5 = 1; //IN1
     LATB4 = 0; //IN2
-}
-
-void io_elbow_toggle() {
-    LATA2 = !LATA2; //IN1
-    LATB4 = !LATB4; //IN2
 }
 
 
 void io_base_move_off() {
-    LATA3 = 0; //IN1
-    LATB5 = 0; //IN2
+    LATA1 = 0; //IN1
+    LATA0 = 0; //IN2
 }
 
 void io_base_move_down() {
-    LATA3 = 0; //IN1
-    LATB5 = 1; //IN2
+    LATA1 = 0; //IN1
+    LATA0 = 1; //IN2
 }
 
 void io_base_move_up() {
-    LATA3 = 1; //IN1
-    LATB5 = 0; //IN2
-}
-
-void io_base_move_toggle() {
-    LATA3 = !LATA3; //IN1
-    LATB5 = !LATB5; //IN2
+    LATA1 = 1; //IN1
+    LATA0 = 0; //IN2
 }
 
 
 void io_base_rotate_off() {
-    LATA4 = 0; //IN1
-    LATB3 = 0; //IN2
+    LATA7 = 0; //IN1
+    LATA6 = 0; //IN2
 }
 
 void io_base_rotate_left() {
-    LATA4 = 1; //IN1
-    LATB3 = 0; //IN2
+    LATA7 = 1; //IN1
+    LATA6 = 0; //IN2
 }
 
 void io_base_rotate_right() {
-    LATA4 = 0; //IN1
-    LATB3 = 1; //IN2
-}
-
-void io_base_rotate_toggle() {
-    LATA4 = !LATA4; //IN1
-    LATB3 = !LATB3; //IN2
+    LATA7 = 0; //IN1
+    LATA6 = 1; //IN2
 }
