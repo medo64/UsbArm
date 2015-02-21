@@ -79,13 +79,13 @@ void io_base_move_off() {
 }
 
 void io_base_move_down() {
-    LATA1 = 0; //IN1
-    LATA0 = 1; //IN2
+    LATA1 = 1; //IN1
+    LATA0 = 0; //IN2
 }
 
 void io_base_move_up() {
-    LATA1 = 1; //IN1
-    LATA0 = 0; //IN2
+    LATA1 = 0; //IN1
+    LATA0 = 1; //IN2
 }
 
 

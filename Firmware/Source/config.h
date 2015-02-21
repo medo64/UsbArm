@@ -5,7 +5,7 @@
 
 
 #pragma config FOSC     = INTOSC
-#pragma config WDTE     = ON
+#pragma config WDTE     = OFF
 #pragma config PWRTE    = ON
 #pragma config MCLRE    = OFF
 #pragma config CP       = OFF

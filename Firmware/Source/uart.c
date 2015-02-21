@@ -20,9 +20,11 @@ void resetRx() {
 void uart_init(uint16_t desiredBaudRate) { //must be 19200 or less
     //USART
     ANSB1   = 0;    //Digital I/O. Pin is assigned to port or digital special function.
-    TRISB2  = 1;    //PORTB pin configured as an input (tri-stated)
-    RXDTSEL = 1;    //RX/DT function is on RB2
-    TXCKSEL = 1;    //TX/CK function is on RB5
+    ANSB2   = 0;    //Digital I/O. Pin is assigned to port or digital special function.
+    TRISB1  = 1;    //PORTB pin configured as an input (tri-stated)
+    TRISB2  = 0;    //PORTB pin configured as an output
+    RXDTSEL = 0;    //RX/DT function is on RB1
+    TXCKSEL = 0;    //TX/CK function is on RB2
     SPBRG   = (uint8_t)(_XTAL_FREQ / desiredBaudRate / 16 - 1);
     BRGH    = 1;    //High speed
     SYNC    = 0;    //Asynchronous mode
