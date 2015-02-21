@@ -7,8 +7,8 @@
 void io_init();
 
 
-#define io_led_on()  { LATB0 = 1; }
-#define io_led_off()  { LATB0 = 0; }
+#define io_led_on()  { LATB0 = 0; }
+#define io_led_off()  { LATB0 = 1; }
 
 void io_gripper_off();
 void io_gripper_close();
