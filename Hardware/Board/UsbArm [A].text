@@ -1,0 +1,33 @@
+UsbArm
+======
+
+48 x 21 mm ~ 1.6 sqin
+
+
+Parts
+-----
+
+|  # | Part name                        | RefDes  | DigiKey                    | DigiKey (alternative)      |
+|---:|----------------------------------|---------|----------------------------|----------------------------|
+|  1 | C 100nF, X7R (0805)              | C1      | 399-1170-1-ND              |                            |
+|  1 | C 10uF /16V, X7R (0805)          | C2      | 399-8013-1-ND              |                            |
+|  1 | D BAT54S (SOT23)                 | D1      | BAT54S-FDICT-ND            |                            |
+|  2 | DS LED (0805)                    | DS1 DS2 | 475-1415-1-ND              |                            |
+|  1 | J Header 6w                      | J1      | 952-2247-ND                | 952-2372-ND                |
+|  1 | J Socket 8w                      | J2      | S5483-ND                   |                            |
+|  2 | Q MOSFET, P-channel (SOT23-3)    | Q1 Q2   | IRLML2246TRPBFCT-ND        |                            |
+|  2 | R 470, 0.125W (0805)             | R5 R6   | RMCF0805FT470RCT-ND        |                            |
+|  5 | U TA7291SG H-bridge (SIP9)       | U1-U5   | TA7291SGOJ-ND              |                            |
+|  1 | PIC16F1826 (SSOP-20)             | U6      | PIC16F1826-I/SS-ND         |                            |
+
+
+### Additional Equipment ###
+
+To connect controller to USB, FTDI serial cable is needed. Only 5 V will do.
+
+
+### LEDs ###
+
+LED on Arm side provides constant current load so that two diodes drop voltage
+appropriately. It can be omitted with NiMH cells but it should be left on with
+non-chargeable alkaline batteries.
