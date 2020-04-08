@@ -1,5 +1,3 @@
-syntax: glob
-
 Firmware/Binaries/*
 Firmware/Source/*.obj
 Firmware/Source/build/*
